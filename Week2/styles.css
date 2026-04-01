@@ -1,0 +1,24 @@
+p{
+
+    color: red
+
+}
+
+/* Prefix with hashtag for ids */
+#funny-stuff{
+
+    background-color: coral;
+    border: 10px dotted silver;
+
+}
+
+/* Prefix with period for classes */
+.joemama{
+    font-weight: 900;
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+body{
+    background-color: darkslategray;
+}
