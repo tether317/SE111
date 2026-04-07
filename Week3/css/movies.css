@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+}
+
+#main {
+    border: 5px solid black;
+    width: 1000px;
+    height: 800px;
+    background-color: whitesmoke;
+}
+
+#mabob {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-decoration: underline firebrick;
+}
+
+li {
+    color: darkred;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-top: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+    border-radius: 25%;
+    width: 300px;
+    padding: 2px;
+
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+}
+
