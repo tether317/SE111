@@ -13,7 +13,7 @@ body {
     }
 }
 
-.big_movie:hover{
+.movie_cover_link:hover{
  border: 2px dashed blue;
 }
 
