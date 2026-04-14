@@ -1,0 +1,10 @@
+body {
+    background-color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#movie_lineup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
