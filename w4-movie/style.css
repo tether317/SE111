@@ -7,4 +7,47 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.big_movie:hover{
+ border: 2px dashed blue;
+}
+
+h1 {
+    animation: flash 3s infinite;
+}
+
+h1:hover {
+    animation: fast_flash 500ms infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: black;
+    }
+    60% {
+        color: darkblue;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes fast_flash {
+    0% {
+        color: black;
+    }
+    /* 30% {
+        color: black;
+    } */
+    50% {
+        color: blue;
+    }
+    100% {
+        color: black;
+    }
 }
