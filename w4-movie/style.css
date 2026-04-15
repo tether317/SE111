@@ -1,17 +1,19 @@
 body {
-    background-color: blanchedalmond;
+    background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgray;
 }
+h2 {color: white;}
+h3 {color: white;}
 
 #movie_lineup {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
 
-    a {
-        text-decoration: none;
-    }
 }
+
+a {color: blue;}
 
 .movie_cover_link:hover{
  border: 2px dashed blue;
