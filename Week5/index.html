@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Form | Week 5</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Week 5 Tables and Forms</h1>
+    <br>
+    <h2>Table Example</h2>
+
+
+    <table>
+        <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Program</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joel</td>
+                <td>Hanson</td>
+                <td>Teacher</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Fontes</td>
+                <td>Student</td>
+            </tr>
+            <tr>
+                <td>Mikhala</td>
+                <td>Campbell</td>
+                <td>Student</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Thing</td>
+                <td>Rating</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cats</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Croutons</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Banjo</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h2>Basic Form Example</h2>
+    <form action="#" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="password" placeholder="Password">
+        <input type="button" name="button" value="Submit">
+    </form>
+
+    <form action="#" method="GET"></form>
+    <table>
+        <thead>
+            <tr>
+                <td>Label</td>
+                <td>Input</td>
+            </tr>
+        </thead>
+
+         <h2> Table with Inputs</h2>
+        <tbody>
+            <!-- text box -->
+            <tr>
+                <td>Text Input</td>
+                <td><input type="text" name="text-input"></td>
+            </tr>
+            <!-- checkbox -->
+            <tr>
+                <td>Checkbox</td>
+                <td><input type="checkbox" name="checkbox"></td>
+            </tr>
+            <!-- color -->
+            <tr>
+                <td>Color</td>
+                <td><input type="color" name="color"></td>
+            </tr>
+            <!-- date -->
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <!-- file -->
+            <tr>
+                <td>File</td>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <!-- time -->
+            <tr>
+                 <td>Time</td>
+                 <td><input type="time" name="time"></td>
+            </tr>
+            <!-- radio buttons -->
+            <tr>
+                <td>Radio Button</td>
+                <td>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="yes-or-no" value="yes" id="yes">
+                    <br>
+                    <label for="no">No</label>
+                    <input type="radio" name="yes-or-no" value="no" id="no">
+                    <br>
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" name="yes-or-no" value="maybe" id="maybe">
+                </td>
+            </tr>
+
+            <!-- some inputs have special tags -->
+             <tr>
+                <td>Text Area</td>
+                <td><textarea name="textarea" cols="30" rows="10" placeholder="Enter your message"></textarea></td>
+             </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

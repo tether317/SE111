@@ -1,0 +1,21 @@
+h2 {
+    color: red;
+}
+
+table, thead, tr, td {
+    border: 1px dotted salmon;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    background-color: blue;
+}
+
+tr:nth-child(even) {
+    background-color: purple;
+}
+
+tr:nth-child(odd) {
+    background-color: pink;
+}
