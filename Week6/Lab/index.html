@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    function domath(num1, num2, operation) {
+        console.log("numbers: " + num1, num2 + "   operation: " + operation)
+        console.log(typeof(num1), typeof(num2))
+        if ((isNaN(num1)) || (isNaN(num2))) {return "error: an invalid number was provided"}
+        if      (operation === "add")       {return num1 + num2}
+        else if (operation === "subtract")  {return num1 - num2}
+        else if (operation === "multiply")  {return num1 * num2}
+        else if (operation === "divide")    {return num1 / num2}
+        else                                {return "unknown error"}
+    }
+
+    var uOperation = "none"
+    while (!["add","subtract","multiply","divide"].includes(uOperation = prompt("Please choose: 'add', 'subtract', 'multiply', or 'divide'"))) {
+        alert("invalid selection")
+    }
+    console.log("user chose " + uOperation)
+
+    alert("Your result is " + domath(Number(prompt("Enter the first number.")), Number(prompt("Enter the second number.")), uOperation))
+
+
+
+</script>
+    
+</html>
