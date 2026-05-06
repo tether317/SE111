@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week7</title>
+</head>
+<body>
+    <h1>Week 7 | MORE Javascript</h1>
+    <h2>Current Number</h2>
+    <h2 id="number">0</h2>
+    <hr>
+    <input type="button" value="increment" onclick="changeby(1)">
+    <input type="button" value="decrement" onclick="changeby(-1)">
+
+    <div id="jokeContainer">
+
+        <div id="question">
+            <h2>Why did the scarecrow get a promotion?</h2>
+        </div>
+
+        <p id="answerBox"></p>
+
+        </div>
+        <input type="button" value="Why?" onclick="answerJoke('He was outstanding in his field.')">
+    </div>
+
+</body>
+
+<script>
+
+    function changeby(val) {
+        var numbox = document.getElementById("number")
+        numbox.innerHTML = Number(numbox.innerHTML) + val
+    }
+
+    function answerJoke(answer) {
+        var answerBox = document.getElementById("answerBox")
+        answerBox.innerHTML=answer
+    }
+
+</script>
+
+</html>
