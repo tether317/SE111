@@ -9,6 +9,18 @@
     
     <p id="thingy"></p>
 
+    <div id="favoriteMovies">
+
+        <h2>My Favorite Movies are:</h2>
+        <ul id="listOfMovies"></ul>
+
+    </div>
+
+    <div id="favoriteFoods">
+        <h2>The Most Popular American Dishes</h2>
+        <ol id="listOfFoods"></ol>
+    </div>
+
 </body>
 
 <script>
@@ -44,6 +56,41 @@
         }
     }
 
+    // objects
+    var person = {
+        first: "Joel"
+        ,last: "Hanson"
+        ,fullname: function() {
+            return this.first + " " + this.last
+        }
+    }
+
+    var car = {
+        wheels: 2000
+        ,hasEngine: true
+        ,oil: "synthetic"
+        ,windows: 1
+        ,drive: function() {
+            console.log("vroom vroom")
+            return("vroom vroom")
+        }
+    }
+
+    // html + js stuff
+    var unorderedMovieList = document.getElementById("listOfMovies")
+    for (let i = 0; i < movies.length; i++) {
+        unorderedMovieList.innerHTML += "<li>" + movies[i] + "</li>"    
+    }
+
+    // according to https://yougov.com/en-us/ratings/american-dishes
+    var popularFoods = ["French Fries", "Grilled Cheese", "Cheeseburger", "Hamburger", "Mashed potatoes", "Fried Chicken", "Steak and Baked Potato", "Apple Pie", "Steak and Fries", "Hash Browns"]
+    for (let i = 0; i < popularFoods.length; i++) {
+        document.getElementById("listOfFoods").innerHTML += "<li>" + popularFoods[i] + "</li>"
+    }
+
+    for (let key in car) {
+        console.log(car[key])
+    }
 
 </script>
 
