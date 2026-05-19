@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 | Parent and Child Elements</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- change da world -->
+</head>
+<body>
+    
+    <div id="divContainer">
+        <p id="removeExample">This p tag is going to be removed.</p>
+        <br>
+    </div>
+
+    <input type="button" id="killTheChild" value="killTheChild" class="bigText">
+
+    <br><br>
+
+    <div id="foodContainer">
+        <img id="food" src="images/hotdog.png" style="width: 40%;">
+        <br>
+        <input type="button" id="changeFood" value="I like Hamburgers instead.">
+    </div>
+
+    <script>
+
+        var divContainer = document.getElementById("divContainer")
+        var pTag = divContainer.appendChild(document.createElement("p"))
+        pTag.innerHTML = "test test"
+        pTag.setAttribute("class", "bigText")
+        pTag.setAttribute("style", "border: 1px solid black")
+
+
+        function removeTheChild() {
+            divContainer.removeChild(document.getElementById("removeExample"))
+        }
+        document.getElementById("killTheChild").addEventListener("click", removeTheChild)
+
+
+        function iLikeHamburgers() {
+            document.getElementById("food").setAttribute("src", "images/hamburger.jpg")
+        }
+        document.getElementById("changeFood").addEventListener("click", iLikeHamburgers)
+
+    </script>
+
+
+</body>
+</html>
